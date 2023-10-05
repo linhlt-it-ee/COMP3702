@@ -1,0 +1,22 @@
+PongNoFrameskip-v4:
+  gamma: 0.99
+  replay_size: 1.0e+4
+
+  batch_size: 32
+
+  hidden_size: 512
+
+  epsilon_decay_last_frame: 1.0e+5
+  epsilon_start: 1.0
+  epsilon_final: 0.02
+
+  replay_start_size: 1.0e+4
+  learning_rate: 1.0e-4
+
+  target_net_sync: 1.0e+3
+  alpha_sync: true
+  tau: 0.005
+
+  stopping_reward: 19.5
+
+  save_path: trained_models
